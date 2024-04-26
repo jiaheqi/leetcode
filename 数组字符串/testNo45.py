@@ -1,12 +1,12 @@
 def Jump(nums):
     max_pos = 0
-    step=0
+    step = 0
     end = 0
-    for i in range(len(nums)-1):
-            max_pos = max(max_pos,nums[i]+i)
-            if i ==end:
-                end = max_pos
-                step +=1
+    for i in range(len(nums) - 1):
+        max_pos = max(max_pos, nums[i] + i)
+        if i == end:
+            end = max_pos
+            step += 1
     return step
 
 
